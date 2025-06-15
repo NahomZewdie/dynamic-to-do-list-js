@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set the text content of the remove button.
         removeButton.textContent = 'Remove';
         // Add a class name to the remove button for styling purposes (from styles.css).
-        removeButton.className = 'remove-btn';
+        // Using classList.add() is generally preferred for adding classes dynamically.
+        removeButton.classList.add('remove-btn');
 
         // Assign an onclick event handler to the remove button.
         // When this button is clicked, its parent <li> element will be removed from the DOM.
